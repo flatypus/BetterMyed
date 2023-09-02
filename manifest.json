@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "BetterMyEd",
+  "version": "0.1.0",
+  "description": "Fixes the MyEdBC website with better styling",
+  "content_scripts": [{
+    "css": ["styles.css"],
+    "js": ["content.js"],
+    "matches": ["https://myeducation.gov.bc.ca/*"],
+    "run_at": "document_start"
+  }]
+}

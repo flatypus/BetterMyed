@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Palanquin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+html, body, .bodyBackground {
+    overflow: hidden !important;
+    background: rgb(36, 4, 42) !important;
+    background: linear-gradient(47deg, rgba(36, 4, 42, 1) 0%, rgba(46, 46, 88, 1) 100%) !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: white !important;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    padding: 0 !important;
+}
+
+.fade-out {
+    opacity: 0 !important;
+    transition: opacity 0.25s ease !important;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    30% {
+        opacity: 0.2;
+        transform: scale(0.82);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#spinner-wrapper{
+    animation: appear 0.8s ease-in forwards;
+}
+
+#spinner {
+    width: 150px;
+    height: 150px;
+    border: 5px solid;
+    border-color: white transparent white transparent;
+    border-radius: 50%;
+    animation: spinner 2s linear infinite;
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+#banner_0portletTitle {
+    font-family: 'Poppins', sans-serif;
+}
+
+#widgetLayoutTable {
+    display: none !important;
+}
+
+.reset_style_h1_top {
+    font-family: 'Palanquin', sans-serif !important;
+}
+
+.portletContent > center > img {
+    display: none !important;
+}
+
+.bodyBackground {
+    padding: 48px !important;
+}
+
+.portletContent {
+    border-bottom: 0px !important;
+}
+
+.pageMenuContainer {
+    border: 0px !important;
+}
+
+.pageMenuGroupContainer {
+    display: none !important;
+}
+
+.menuImageContainerSelected {
+    border: 0px !important;
+}
+
+#widgetsContainer {
+    font-family: 'Inter', sans-serif !important;
+    font-size: large !important;
+    color: #ffffff99 !important;
+}
+
+.loginBackground {
+    background-image: none !important;
+}
+
+input {
+    border: 0px !important;
+    border-bottom: 1px solid white !important;
+    background-color: transparent !important;
+    color: white !important;
+    font-size: large !important;
+    font-family: 'Inter', sans-serif !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    width: 100% !important;
+    caret: white !important;
+    caret-color: auto !important;
+    outline: none !important;
+}
+
+.toolbarItem {
+    font-family: 'Inter', sans-serif !important;
+}
